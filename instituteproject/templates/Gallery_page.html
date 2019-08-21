@@ -1,0 +1,93 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+<html>
+<head>
+<title>Gallery Page</title>
+</head>
+<body style="background-color: #e74c3c">
+
+{% block content %}
+{#    <img>#}
+{#    .row{#}
+{#        border: 2px red solid;#}
+{#    }#}
+{#    </style>#}
+{#    <div class="container">#}
+{#    <div class="row">#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic1.jpg' %}" style="width: 100%; height:100%">#}
+{#        </div>#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic2.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="row" >#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic3.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic4.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="row">#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic5.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic6.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="row">#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic7.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#        <div class="col-md-6">#}
+{#            <img src="{% static 'images/pic8.jpg' %}" style="width: 100%; height: 100%">#}
+{#        </div>#}
+{#    </div>#}
+{#    </div>#}
+   <style>
+     .container img{
+         filter: grayscale(100%);
+         transition: 1.2s;
+     }
+   .container img:hover{
+         filter: grayscale(0%);
+         transition: 1.1s;
+     }
+   </style>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <a href="{% static 'images/car1.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car1.jpg' %}" style="width: 100%;height:100%"></a>
+        </div>
+
+        <div class="col-md-2">
+            <a href="{% static 'images/car2.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car2.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+
+        <div class="col-md-2">
+            <a href="{% static 'images/car3.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car3.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+
+        <div class="col-md-2">
+            <a href="{% static 'images/car4.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car4.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+        <div class="col-md-2">
+            <a href="{% static 'images/car5.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car5.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+        <div class="col-md-2">
+            <a href="{% static 'images/car6.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car6.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+        <div class="col-md-2">
+            <a href="{% static 'images/car7.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car7.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div><div class="col-md-2">
+            <a href="{% static 'images/car8.jpg' %}" data-lightbox="container"> <img src="{% static 'images/car8.jpg' %}" style="width: 100%;height: 100%"></a>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Base Files</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+    <script type="text/javascript" src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+
+</head>
+<style>
+    body{
+        background-color:darkgray;
+    }
+    #name1{
+        font-size:30px;
+        color: red;
+        font-family: cursive;
+        text-shadow: 2px 2px blue;
+    }
+    #menu_ul{
+        background-color: black;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: red;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none !important;
+        font-size: 20px;
+
+    }
+    .active{
+        background: green;
+    }
+    li a:hover{
+        background: blue;
+        color: antiquewhite;
+    }
+
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color:white ;
+        text-align: center;
+    }
+    #h11{
+        font-size: 40px;
+        text-shadow: 3px 3px 3px red;
+        margin-top: -10px;
+
+    }
+</style>
+
+<body>
+
+<ul id="menu_ul">
+    <li><a href="/home/" class="active">Home</a></li>
+    <li><a href="/Contact/">Contact</a></li>
+    <li><a href="/courses/" >Courses</a></li>
+    <li><a href="/FeedBack/">Feedback</a></li>
+    <li><a href="/ourteam/" >Our Team</a></li>
+    <li><a href="/Gallery/" >Gallery</a></li>
+</ul><br>
+
+<marquee><h2 id="h11">Welcome to DJANGO WORLD</h2></marquee>
+{% block content %}
+{% endblock %}<br><br>
+<footer>
+    <h3 id = 'h11'>Thank you to all </h3>
+</footer>
+</body>
+</html>

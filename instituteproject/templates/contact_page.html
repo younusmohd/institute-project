@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+<html>
+<title>
+    contact page
+</title>
+<body>
+
+{% block content %}
+    <style>
+    ul{
+        list-style-type: none;
+    }
+    </style>
+    <div class="container">
+    <div class="row">
+        <div class="offset-md-3 column-md-6">
+            <form method="POST">
+                {% csrf_token %}
+                {{ cform }}<br>
+                <input type="submit" value="sumbit">
+                <input type="reset" value="clear">
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+</body>
+</html>
